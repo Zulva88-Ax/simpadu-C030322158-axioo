@@ -1,7 +1,9 @@
 <?php
 
+
 use App\Http\Controllers\Api\ScheduleController;
 use App\Http\Controllers\Api\AuthController;
+use Database\Seeders\BiodataSeeder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +28,5 @@ Route::post('/logout', [AuthController::class, 'logout'])
 
 Route::apiResource('schedules', ScheduleController::class)
     ->middleware('auth:sanctum');
+
+

@@ -1,7 +1,7 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="index.html">SIMPADU-C030322999</a>
+            <a href="index.html">SIMPADU-C030322158</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="index.html">SKD</a>
@@ -26,6 +26,11 @@
 
                 </ul>
             </li>
+
+                    <li>
+                    <a href="{{ route('gudang.index') }}" class="nav-link"><i class="fas fa-fire"></i><span>DATA GUDANG</span></a>
+                    </li>
+
 
     </aside>
 </div>

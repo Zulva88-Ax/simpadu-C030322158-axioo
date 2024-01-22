@@ -1,6 +1,7 @@
 <?php
-
+use App\Http\Controllers\GudangController;
 use App\Http\Controllers\UserController;
+use App\Models\Gudang;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,18 @@ Route::middleware(['auth'])->group(function () {
         return view('pages.app.dashboard-simpadu', ['type_menu' => '']);
     })->name('home');
     Route::resource('user', UserController::class);
+
+    Route::resource('gudang', GudangController::class);
+
+
+   
+  
+    Route::delete('/gudang/{id}', 'GudangController@destroy')->name('gudang.destroy');
+
+
+
+
+
 
 });
 

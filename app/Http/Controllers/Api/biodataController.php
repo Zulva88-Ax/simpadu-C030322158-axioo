@@ -1,19 +1,25 @@
 <?php
 
-namespace App\Http\Controllers\Api;
-use App\Models\Schedule;
-use App\Http\Resources\ScheduleResource;
-use App\Http\Controllers\Controller;
+namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 
-class ScheduleController extends Controller
+class biodata extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return ScheduleResource::collection(Schedule::all());
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
     }
 
     /**
@@ -28,6 +34,14 @@ class ScheduleController extends Controller
      * Display the specified resource.
      */
     public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
     {
         //
     }
